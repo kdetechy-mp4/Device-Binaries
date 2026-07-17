@@ -1,16 +1,29 @@
 ## Firmware Infos
 
 - **Device:** Samsung Galaxy Z Fold3 5G
-- **Region:** DTM (Germany)
-- **Version:** `F926BXXS1CVCA` / `BOOT.MXF.1.0-00815-LAHAINA-1`
+- **Region:** EUX (Europe)
+- **Version:** `F926BXXS1CVCA` / `BOOT.MXF.1.0-00872-LAHAINA-2`
 
 ## Patches/Fixes
+
+### ButtonsDxe:
+
+- **Reason:** To make the Power Button usable in UEFI.
+- **Patch Nr. 1:** The Special Samsung Key Code (`0x80`) has been Changed to the Key Code Enter (`0xD`).
+- **Patch Nr. 2:** The Button Handlening has been Modded to allow Unichar Key Codes.
+- **Patch Creator:** [Robotix22](https://github.com/Robotix22/)
 
 ### ClockDxe:
 
 - **Reason:** To keep Display turned on while UEFI Boot.
-- **Patch:** The DCD Dependency Enablement Path has been patched to avoid reinitialize MDSS.
-- **Patch Creator:** [Gustave Monce](https://github.com/gus33000)
+- **Patch:** The DCD Disable Dependencies Function Call has been Removed.
+- **Patch Creator:** [Gustave Monce](https://github.com/gus33000/)
+
+### QcomWDogDxe:
+
+- **Reason:** To avoid Sudden Reboots.
+- **Patch:** Set the WatchDog PCD to `FALSE` instead of `TRUE`.
+- **Patch Creator:** [Robotix22](https://github.com/Robotix22/)
 
 ### TzDxeLA:
 
@@ -20,6 +33,12 @@
 
 ### UsbConfigDxe:
 
-- **Reason:** To make USB work in the OS.
-- **Patch:** The USB Deinit Code has been Removed from Exit Boot Services Event to allow the OS to continue using the USB Port.
-- **Patch Creator:** [Gustave Monce](https://github.com/gus33000)
+- **Reason:** To allow the usage of the USB Port.
+- **Patch:** Removed IOMMU Detach from Exit Boot Services.
+- **Patch Creator:** [Gustave Monce](https://github.com/gus33000/)
+
+### UsbMsdDxe:
+
+- **Reason:** For better Mass Storage usage.
+- **Patch:** Changed Removable State to Non-Removable.
+- **Patch Creator:** [N1kroks](https://github.com/N1kroks/)
