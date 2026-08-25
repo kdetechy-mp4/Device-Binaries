@@ -19,12 +19,6 @@
 - **Patch:** The DCD Disable Dependencies Function Call has been Removed.
 - **Patch Creator:** [Gustave Monce](https://github.com/gus33000/)
 
-### QcomWDogDxe:
-
-- **Reason:** To avoid Sudden Reboots.
-- **Patch:** Set the WatchDog PCD to `FALSE` instead of `TRUE`.
-- **Patch Creator:** [Robotix22](https://github.com/Robotix22/)
-
 ### TzDxeLA:
 
 - **Reason:** To make UEFI not Crash during UEFI Boot.
