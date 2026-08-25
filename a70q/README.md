@@ -2,7 +2,7 @@
 
 - Device: Samsung Galaxy A70
 - Region: XXV (Vietnam)
-- Version: `A705FXXU5DXD2` / `BOOT.XF.3.1-00270-SM6150LZB-1
+- Version: `A705FXXU5DXD2` / `BOOT.XF.3.1-00270-SM6150LZB-1`
 
 ## Patches / Fixes
 

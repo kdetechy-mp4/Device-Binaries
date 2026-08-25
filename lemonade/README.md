@@ -1,8 +1,8 @@
 ## Firmware Infos
 
 - **Device:** Oneplus 9
-- **Region:** ?
-- **Version:** ?
+- **Region:** EU
+- **Version:** `LE2113_11_C.60` / `BOOT.MXF.1.0-00647-LAHAINA-1`
 
 ## Patches/Fixes
 
@@ -15,9 +15,8 @@
 ### ClockDxe:
 
 - **Reason:** To keep Display turned on while UEFI Boot.
-- **Patch Nr. 1:** The DCD Dependency Enablement Path has been patched to avoid reinitialize MDSS.
-- **Patch Nr. 2:** The LPM Call Backs Function has been Removed to allow Windows Boot on Debug Builds.
-- **Patch Creator:** [Gustave Monce](https://github.com/gus33000) & [N1kroks](https://github.com/N1kroks)
+- **Patch:** The DCD Dependency Enablement Path has been patched to avoid reinitialize MDSS.
+- **Patch Creator:** [Gustave Monce](https://github.com/gus33000)
 
 ### TzDxeLA:
 
