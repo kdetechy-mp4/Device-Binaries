@@ -10,7 +10,7 @@
 
 - Reason: Helps navigating Menus (e.g. UEFI Menu).
 - Patch Nr. 1: Key code was patched for the power button to be mapped as ENTER instead of Special Samsung Keycode.
-- Patch Creator: [Robotix22](https://github.com/Robotix22)`
+- Patch Creator: [Robotix22](https://github.com/Robotix22)
 
 ### ClockDxe:
 
